@@ -1,5 +1,57 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 ToDo List
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Простое ToDo приложение, построенное с использованием Vue 3, TypeScript, Vite и Tailwind CSS.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Функциональность
+
+- Создание, удаление и отметка выполнения задач
+- Фильтрация задач (все, активные, завершённые)
+- Сохранение задач в локальном хранилище браузера
+- Адаптивный дизайн
+
+## Технологии
+
+- Vue 3 с Composition API
+- TypeScript для типизации
+- Vite как инструмент сборки
+- Pinia для управления состоянием
+- Tailwind CSS для стилизации
+- VueUse для утилит
+
+## Установка
+
+```bash
+# Установка зависимостей
+npm install
+
+# Запуск сервера разработки
+npm run dev
+
+# Сборка для продакшена
+npm run build
+
+# Предпросмотр продакшен сборки
+npm run preview
+```
+
+## Структура проекта
+
+```
+src/
+├── components/     # Vue компоненты
+├── stores/        # Хранилища Pinia
+├── App.vue        # Корневой компонент
+└── main.ts        # Точка входа
+```
+
+## Использование
+
+1. Введите текст задачи в поле ввода
+2. Нажмите "Добавить" или Enter для создания задачи
+3. Используйте чекбокс для отметки выполнения
+4. Нажмите "Удалить" для удаления задачи
+5. Используйте фильтры для отображения нужных задач
+
+## Лицензия
+
+MIT
